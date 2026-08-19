@@ -1155,15 +1155,15 @@ text-decoration:none;
 
                     <div class="tabs-scroll">
 <button class="tab active" data-cat="all">🍽️ All Items</button>
-<button class="tab" data-cat="Veg Starter">🥗 Veg Starter</button>
-<button class="tab" data-cat="Veg Rice">🍚 Veg Rice</button>
-<button class="tab" data-cat="Veg Noodles">🍜 Veg Noodles</button>                        
-<button class="tab" data-cat="Non Veg Rice">🍚 Non Veg Rice</button>
-<button class="tab" data-cat="Non Veg Noodles">🍜 Non Veg Noodles</button>
-<button class="tab" data-cat="Non Veg Starter">🍗 Non Veg Starter</button>
-<button class="tab" data-cat="Non Veg Soup">🥣 Non Veg Soup</button>
-<button class="tab" data-cat="Tandoori & Kebab">🔥 Tandoori & Kebab</button>
-<button class="tab" data-cat="Biryani & Combos">🍱 Biryani & Combos</button>                          
+<button class="tab" data-cat="Gavthi Special">🐓 Gavthi Special</button>
+<button class="tab" data-cat="Chicken Special">🍗 Chicken Special</button>
+<button class="tab" data-cat="Mutton Special">🍖 Mutton Special</button>
+<button class="tab" data-cat="Biryani Special">🍲 Biryani Special</button>
+<button class="tab" data-cat="Fish Special">🐟 Fish Special</button>
+<button class="tab" data-cat="Sukhi Machhi Special">🦐 Sukhi Machhi Special</button>
+<button class="tab" data-cat="Egg Special">🍳 Egg Special</button>
+<button class="tab" data-cat="Veg Special">🥦 Veg Special</button>
+<button class="tab" data-cat="Roti & Rice">🍚 Roti & Rice</button>                       
                     </div>  
                 </div>
             </div>
@@ -1291,91 +1291,78 @@ text-decoration:none;
     <script>
         // Menu Data
         const data = [
- 
-  {"id": 1, "cat": "Non Veg Rice", "name": "Chicken Fried Rice (Half) | चिकन फ्राय राईस (हाफ)", "price": "Rs. 90", "desc": "Classic chicken fried rice (Half).", "tags": ["Non-Veg", "Non Veg Rice"], "img": "img/chicken_fried_rice.jpeg"},
-  {"id": 2, "cat": "Non Veg Rice", "name": "Chicken Fried Rice (Full) | चिकन फ्राय राईस (फुल)", "price": "Rs. 160", "desc": "Classic chicken fried rice (Full).", "tags": ["Non-Veg", "Non Veg Rice"], "img": "img/chicken_fried_rice.jpeg"},
-  {"id": 3, "cat": "Non Veg Rice", "name": "Chicken Schezwan Rice (Half) | चिकन शेजवान राईस (हाफ)", "price": "Rs. 100", "desc": "Spicy Schezwan chicken fried rice (Half).", "tags": ["Non-Veg", "Non Veg Rice"], "img": "img/chicken_schezwan_rice.jpeg"},
-  {"id": 4, "cat": "Non Veg Rice", "name": "Chicken Schezwan Rice (Full) | चिकन शेजवान राईस (फुल)", "price": "Rs. 180", "desc": "Spicy Schezwan chicken fried rice (Full).", "tags": ["Non-Veg", "Non Veg Rice"], "img": "img/chicken_schezwan_rice.jpeg"},
-  {"id": 5, "cat": "Non Veg Rice", "name": "Chicken Manchurian Rice (Half) | चिकन मंचुरियन राईस (हाफ)", "price": "Rs. 120", "desc": "Chicken rice tossed with Manchurian balls (Half).", "tags": ["Non-Veg", "Non Veg Rice"], "img": "img/chicken_manchurian_rice.jpeg"},
-  {"id": 6, "cat": "Non Veg Rice", "name": "Chicken Manchurian Rice (Full) | चिकन मंचुरियन राईस (फुल)", "price": "Rs. 200", "desc": "Chicken rice tossed with Manchurian balls (Full).", "tags": ["Non-Veg", "Non Veg Rice"], "img": "img/chicken_manchurian_rice.jpeg"},
-  {"id": 7, "cat": "Non Veg Rice", "name": "Chicken Combination Rice (Half) | चिकन कॉम्बिनेशन राईस (हाफ)", "price": "Rs. 120", "desc": "Combination of chicken rice and noodles (Half).", "tags": ["Non-Veg", "Non Veg Rice"], "img": "img/chicken_combination_rice.jpeg"},
-  {"id": 8, "cat": "Non Veg Rice", "name": "Chicken Combination Rice (Full) | चिकन कॉम्बिनेशन राईस (फुल)", "price": "Rs. 200", "desc": "Combination of chicken rice and noodles (Full).", "tags": ["Non-Veg", "Non Veg Rice"], "img": "img/chicken_combination_rice.jpeg"},
-  {"id": 9, "cat": "Non Veg Rice", "name": "Chicken Triple Rice (Half) | चिकन ट्रिपल राईस (हाफ)", "price": "Rs. 140", "desc": "Chicken triple rice served with rich gravy (Half).", "tags": ["Non-Veg", "Non Veg Rice"], "img": "img/chicken_triple_rice.jpeg"},
-  {"id": 10, "cat": "Non Veg Rice", "name": "Chicken Triple Rice (Full) | चिकन ट्रिपल राईस (फुल)", "price": "Rs. 210", "desc": "Chicken triple rice served with rich gravy (Full).", "tags": ["Non-Veg", "Non Veg Rice"], "img": "img/chicken_triple_rice.jpeg"},
-  {"id": 11, "cat": "Non Veg Rice", "name": "Chicken Chopper Rice (Half) | चिकन चॉपर राईस (हाफ)", "price": "Rs. 250", "desc": "Special chicken rice served with chopped chicken gravy (Half).", "tags": ["Non-Veg", "Non Veg Rice"], "img": "img/chicken_chopper_rice.jpeg"},
-  {"id": 12, "cat": "Non Veg Rice", "name": "Chicken Chopper Rice (Full) | चिकन चॉपर राईस (फुल)", "price": "Rs. 400", "desc": "Special chicken rice served with chopped chicken gravy (Full).", "tags": ["Non-Veg", "Non Veg Rice"], "img": "img/chicken_chopper_rice.jpeg"},
-  {"id": 13, "cat": "Non Veg Rice", "name": "Chicken Packing Rice | चिकन पॅकिंग राईस", "price": "Rs. 320", "desc": "Special parcel packaging chicken rice platter.", "tags": ["Non-Veg", "Non Veg Rice"], "img": "img/chicken_packing_rice.jpeg"},
-  {"id": 14, "cat": "Non Veg Rice", "name": "1000 Rice (Special) | १००० राईस (हजार राईस)", "price": "Rs. 450", "desc": "Chef special mega thousand chicken rice.", "tags": ["Non-Veg", "Non Veg Rice"], "img": "img/1000_rice.jpeg"},
-  {"id": 15, "cat": "Non Veg Rice", "name": "Chicken Apple Khabsa Rice | चिकन ॲपल खब्सा राईस", "price": "Rs. 450", "desc": "Rich and exotic chicken apple khabsa rice platter.", "tags": ["Non-Veg", "Non Veg Rice"], "img": "img/apple_khabsa_rice.jpeg"},
+  {"id": 1, "cat": "Gavthi Special", "name": "Pure Gavthi Kombda | प्युअर गावठी कोंबडा", "price": "Rs. 1400 - 1500", "desc": "Authentic village-style pure desi rooster cooked on chulha.", "tags": ["Non-Veg", "Gavthi Special"], "img": "img/pure_gavthi_kombda.jpeg"},
+  {"id": 2, "cat": "Gavthi Special", "name": "Gavthi Kombdi | गावठी कोंबडी", "price": "Rs. 1000", "desc": "Traditional village-style desi chicken cooked on chulha.", "tags": ["Non-Veg", "Gavthi Special"], "img": "img/gavthi_kombdi.jpeg"},
+  {"id": 3, "cat": "Gavthi Special", "name": "Gavthi Talang | गावठी तलंग", "price": "Rs. 950", "desc": "Tender young desi chicken cooked in rustic spices.", "tags": ["Non-Veg", "Gavthi Special"], "img": "img/gavthi_talang.jpeg"},
+  {"id": 4, "cat": "Gavthi Special", "name": "Gavran Kombda | गावरान कोंबडा", "price": "Rs. 1200", "desc": "Country rooster prepared in spicy Maharashtrian rassa.", "tags": ["Non-Veg", "Gavthi Special"], "img": "img/gavran_kombda.jpeg"},
+  {"id": 5, "cat": "Gavthi Special", "name": "R-R Kombda | आर-आर कोंबडा", "price": "Rs. 1000", "desc": "RIR breed farm-raised chicken cooked in authentic desi spices.", "tags": ["Non-Veg", "Gavthi Special"], "img": "img/rr_kombda.jpeg"},
+  {"id": 6, "cat": "Gavthi Special", "name": "Lavari | लावारी (बटर पक्षी)", "price": "Rs. 200", "desc": "Delicious rustic quail (quail bird) curry cooked on wood-fire.", "tags": ["Non-Veg", "Gavthi Special"], "img": "img/lavari.jpeg"},
 
-  {"id": 16, "cat": "Non Veg Noodles", "name": "Chicken Noodles (Half) | चिकन नूडल्स (हाफ)", "price": "Rs. 100", "desc": "Stir-fried noodles cooked with chicken (Half).", "tags": ["Non-Veg", "Non Veg Noodles"], "img": "img/chicken_noodles.jpeg"},
-  {"id": 17, "cat": "Non Veg Noodles", "name": "Chicken Noodles (Full) | चिकन नूडल्स (फुल)", "price": "Rs. 180", "desc": "Stir-fried noodles cooked with chicken (Full).", "tags": ["Non-Veg", "Non Veg Noodles"], "img": "img/chicken_noodles.jpeg"},
-  {"id": 18, "cat": "Non Veg Noodles", "name": "Chicken Hakka Noodles (Half) | चिकन हक्का नूडल्स (हाफ)", "price": "Rs. 100", "desc": "Classic chicken hakka noodles (Half).", "tags": ["Non-Veg", "Non Veg Noodles"], "img": "img/chicken_hakka_noodles.jpeg"},
-  {"id": 19, "cat": "Non Veg Noodles", "name": "Chicken Hakka Noodles (Full) | चिकन हक्का नूडल्स (फुल)", "price": "Rs. 180", "desc": "Classic chicken hakka noodles (Full).", "tags": ["Non-Veg", "Non Veg Noodles"], "img": "img/chicken_hakka_noodles.jpeg"},
+  {"id": 7, "cat": "Chicken Special", "name": "Chicken Kharda (1 Kg) | चिकन खर्डा (१ किलो)", "price": "Rs. 300", "desc": "Spicy roasted chicken prepared with fiery green chilli kharda.", "tags": ["Non-Veg", "Chicken Special"], "img": "img/chicken_kharda.jpeg"},
+  {"id": 8, "cat": "Chicken Special", "name": "Chicken Rassa | चिकन रस्सा", "price": "Rs. 300", "desc": "Traditional authentic chulha-cooked spicy chicken gravy rassa.", "tags": ["Non-Veg", "Chicken Special"], "img": "img/chicken_rassa.jpeg"},
+  {"id": 9, "cat": "Chicken Special", "name": "Chicken Sukka | चिकन सुक्का", "price": "Rs. 300", "desc": "Dry spiced chicken roasted with coconut and onion masala.", "tags": ["Non-Veg", "Chicken Special"], "img": "img/chicken_sukka.jpeg"},
+  {"id": 10, "cat": "Chicken Special", "name": "Chicken Tikka | चिकन टिक्का", "price": "Rs. 300", "desc": "Marinated boneless chicken roasted on charcoal grill.", "tags": ["Non-Veg", "Chicken Special"], "img": "img/chicken_tikka.jpeg"},
+  {"id": 11, "cat": "Chicken Special", "name": "Chicken Gravy | चिकन ग्रेव्ही", "price": "Rs. 300", "desc": "Flavorful chicken pieces simmered in rich homestyle gravy.", "tags": ["Non-Veg", "Chicken Special"], "img": "img/chicken_gravy.jpeg"},
+  {"id": 12, "cat": "Chicken Special", "name": "Chicken 65 | चिकन ६५", "price": "Rs. 300", "desc": "Crispy deep fried chicken tossed with spicy tempering.", "tags": ["Non-Veg", "Chicken Special"], "img": "img/chicken_65.jpeg"},
+  {"id": 13, "cat": "Chicken Special", "name": "Chicken Kabool Fry | चिकन कबूल फ्राय", "price": "Rs. 300", "desc": "Special roasted chicken fry with aromatic spices.", "tags": ["Non-Veg", "Chicken Special"], "img": "img/chicken_kabool_fry.jpeg"},
+  {"id": 14, "cat": "Chicken Special", "name": "Chicken Tandoori | चिकन तंदूरी", "price": "Rs. 300", "desc": "Whole roasted spiced chicken grilled to perfection.", "tags": ["Non-Veg", "Chicken Special"], "img": "img/chicken_tandoori.jpeg"},
+  {"id": 15, "cat": "Chicken Special", "name": "Chicken Raan | चिकन रान", "price": "Rs. 450", "desc": "Whole spiced chicken leg roasted in tandoori spices.", "tags": ["Non-Veg", "Chicken Special"], "img": "img/chicken_raan.jpeg"},
+  {"id": 16, "cat": "Chicken Special", "name": "Chicken Lollipop | चिकन लॉलीपॉप", "price": "Rs. 300", "desc": "Crispy seasoned fried chicken wings starter.", "tags": ["Non-Veg", "Chicken Special"], "img": "img/chicken_lollipop.jpeg"},
+  {"id": 17, "cat": "Chicken Special", "name": "Liver Petha Lapeta | लिव्हर पेठा लपेटा", "price": "Rs. 300", "desc": "Chicken liver and gizzard tossed in thick lapeta masala.", "tags": ["Non-Veg", "Chicken Special"], "img": "img/liver_petha_lapeta.jpeg"},
 
-  {"id": 20, "cat": "Non Veg Starter", "name": "Chicken Lollipop (Half) | चिकन लॉलीपॉप (हाफ)", "price": "Rs. 160", "desc": "Crispy fried chicken lollipops (Half).", "tags": ["Non-Veg", "Non Veg Starter"], "img": "img/chicken_lollipop.jpeg"},
-  {"id": 21, "cat": "Non Veg Starter", "name": "Chicken Lollipop (Full) | चिकन लॉलीपॉप (फुल)", "price": "Rs. 240", "desc": "Crispy fried chicken lollipops (Full).", "tags": ["Non-Veg", "Non Veg Starter"], "img": "img/chicken_lollipop.jpeg"},
-  {"id": 22, "cat": "Non Veg Starter", "name": "Masala Lollipop (Half) | मसाला लॉलीपॉप (हाफ)", "price": "Rs. 180", "desc": "Chicken lollipop tossed in spicy masala (Half).", "tags": ["Non-Veg", "Non Veg Starter"], "img": "img/masala_lollipop.jpeg"},
-  {"id": 23, "cat": "Non Veg Starter", "name": "Masala Lollipop (Full) | मसाला लॉलीपॉप (फुल)", "price": "Rs. 260", "desc": "Chicken lollipop tossed in spicy masala (Full).", "tags": ["Non-Veg", "Non Veg Starter"], "img": "img/masala_lollipop.jpeg"},
-  {"id": 24, "cat": "Non Veg Starter", "name": "Chicken Chilli Dry (Half) | चिकन चिल्ली ड्राय (हाफ)", "price": "Rs. 160", "desc": "Dry tossed spicy chilli chicken (Half).", "tags": ["Non-Veg", "Non Veg Starter"], "img": "img/chicken_chilli_dry.jpeg"},
-  {"id": 25, "cat": "Non Veg Starter", "name": "Chicken Chilli Dry (Full) | चिकन चिल्ली ड्राय (फुल)", "price": "Rs. 240", "desc": "Dry tossed spicy chilli chicken (Full).", "tags": ["Non-Veg", "Non Veg Starter"], "img": "img/chicken_chilli_dry.jpeg"},
-  {"id": 26, "cat": "Non Veg Starter", "name": "Chicken Chilli Gravy (Half) | चिकन चिल्ली ग्रेव्ही (हाफ)", "price": "Rs. 180", "desc": "Spicy chilli chicken in thick gravy (Half).", "tags": ["Non-Veg", "Non Veg Starter"], "img": "img/chicken_chilli_gravy.jpeg"},
-  {"id": 27, "cat": "Non Veg Starter", "name": "Chicken Chilli Gravy (Full) | चिकन चिल्ली ग्रेव्ही (फुल)", "price": "Rs. 260", "desc": "Spicy chilli chicken in thick gravy (Full).", "tags": ["Non-Veg", "Non Veg Starter"], "img": "img/chicken_chilli_gravy.jpeg"},
-  {"id": 28, "cat": "Non Veg Starter", "name": "Chicken Manchurian Dry (Half) | चिकन मंचुरियन ड्राय (हाफ)", "price": "Rs. 160", "desc": "Dry fried chicken Manchurian balls (Half).", "tags": ["Non-Veg", "Non Veg Starter"], "img": "img/chicken_manchurian_dry.jpeg"},
-  {"id": 29, "cat": "Non Veg Starter", "name": "Chicken Manchurian Dry (Full) | चिकन मंचुरियन ड्राय (फुल)", "price": "Rs. 240", "desc": "Dry fried chicken Manchurian balls (Full).", "tags": ["Non-Veg", "Non Veg Starter"], "img": "img/chicken_manchurian_dry.jpeg"},
-  {"id": 30, "cat": "Non Veg Starter", "name": "Chicken Manchurian Gravy (Half) | चिकन मंचुरियन ग्रेव्ही (हाफ)", "price": "Rs. 180", "desc": "Chicken Manchurian balls in delicious gravy (Half).", "tags": ["Non-Veg", "Non Veg Starter"], "img": "img/chicken_manchurian_gravy.jpeg"},
-  {"id": 31, "cat": "Non Veg Starter", "name": "Chicken Manchurian Gravy (Full) | चिकन मंचुरियन ग्रेव्ही (फुल)", "price": "Rs. 260", "desc": "Chicken Manchurian balls in delicious gravy (Full).", "tags": ["Non-Veg", "Non Veg Starter"], "img": "img/chicken_manchurian_gravy.jpeg"},
-  {"id": 32, "cat": "Non Veg Starter", "name": "Crispy Peri Peri Chicken | क्रिस्पी पेरी पेरी चिकन", "price": "Rs. 300", "desc": "Crunchy fried chicken tossed with spicy peri peri seasoning.", "tags": ["Non-Veg", "Non Veg Starter"], "img": "img/crispy_peri_peri_chicken.jpeg"},
+  {"id": 18, "cat": "Mutton Special", "name": "Mutton Rassa | मटन रस्सा", "price": "Rs. 300", "desc": "Homestyle spicy goat mutton curry cooked on chulha.", "tags": ["Non-Veg", "Mutton Special"], "img": "img/mutton_rassa.jpeg"},
+  {"id": 19, "cat": "Mutton Special", "name": "Mutton Sukka | मटन सुक्का", "price": "Rs. 300", "desc": "Dry mutton roasted in black Maharashtrian masala.", "tags": ["Non-Veg", "Mutton Special"], "img": "img/mutton_sukka.jpeg"},
+  {"id": 20, "cat": "Mutton Special", "name": "Mutton Handi (Half) | मटन हंडी (हाफ)", "price": "Rs. 600", "desc": "Rich mutton slow cooked in clay handi (Half).", "tags": ["Non-Veg", "Mutton Special"], "img": "img/mutton_handi.jpeg"},
+  {"id": 21, "cat": "Mutton Special", "name": "Mutton Handi (Full) | मटन हंडी (फुल)", "price": "Rs. 1100", "desc": "Rich mutton slow cooked in clay handi (Full).", "tags": ["Non-Veg", "Mutton Special"], "img": "img/mutton_handi.jpeg"},
+  {"id": 22, "cat": "Mutton Special", "name": "Bheja Fry | भेजा फ्राय", "price": "Rs. 300", "desc": "Mutton brain sautéed with onions and aromatic herbs.", "tags": ["Non-Veg", "Mutton Special"], "img": "img/bheja_fry.jpeg"},
+  {"id": 23, "cat": "Mutton Special", "name": "Mundi Fry | मुंडी फ्राय", "price": "Rs. 300", "desc": "Spiced mutton head meat roasted with rich spices.", "tags": ["Non-Veg", "Mutton Special"], "img": "img/mundi_fry.jpeg"},
+  {"id": 24, "cat": "Mutton Special", "name": "Dal Vajadi | दाल वजडी", "price": "Rs. 300", "desc": "Traditional tripe (vajadi) cooked with lentils and spices.", "tags": ["Non-Veg", "Mutton Special"], "img": "img/dal_vajadi.jpeg"},
+  {"id": 25, "cat": "Mutton Special", "name": "Mutton Kharda | मटन खर्डा", "price": "Rs. 450", "desc": "Tender mutton cooked with green chilli kharda paste.", "tags": ["Non-Veg", "Mutton Special"], "img": "img/mutton_kharda.jpeg"},
 
-  {"id": 33, "cat": "Non Veg Soup", "name": "Chicken Soup | चिकन सुप", "price": "Rs. 80", "desc": "Hot and flavorful chicken broth soup.", "tags": ["Non-Veg", "Non Veg Soup"], "img": "img/chicken_soup.jpeg"},
-  {"id": 34, "cat": "Non Veg Soup", "name": "Manchurian Soup | मंचुरियन सुप", "price": "Rs. 90", "desc": "Spicy Manchurian chicken soup broth.", "tags": ["Non-Veg", "Non Veg Soup"], "img": "img/manchurian_soup.jpeg"},
+  {"id": 26, "cat": "Biryani Special", "name": "Chicken Biryani | चिकन बिर्याणी", "price": "Rs. 200", "desc": "Aromatic basmati rice cooked with chicken and spices.", "tags": ["Non-Veg", "Biryani Special"], "img": "img/chicken_biryani.jpeg"},
+  {"id": 27, "cat": "Biryani Special", "name": "Mutton Biryani | मटन बिर्याणी", "price": "Rs. 300", "desc": "Rich basmati rice layered with juicy mutton pieces.", "tags": ["Non-Veg", "Biryani Special"], "img": "img/mutton_biryani.jpeg"},
+  {"id": 28, "cat": "Biryani Special", "name": "Kolambi Biryani (Prawns) | कोळंबी बिर्याणी", "price": "Rs. 300", "desc": "Flavorful basmati rice cooked with fresh prawns.", "tags": ["Non-Veg", "Biryani Special"], "img": "img/kolambi_biryani.jpeg"},
 
-  {"id": 35, "cat": "Tandoori & Kebab", "name": "Chicken Tandoori (Half) | चिकन तंदूरी (हाफ)", "price": "Rs. 350", "desc": "Roasted chicken marinated in tandoori spices (Half).", "tags": ["Non-Veg", "Tandoori & Kebab"], "img": "img/chicken_tandoori.jpeg"},
-  {"id": 36, "cat": "Tandoori & Kebab", "name": "Chicken Tandoori (Full) | चिकन तंदूरी (फुल)", "price": "Rs. 600", "desc": "Roasted chicken marinated in tandoori spices (Full).", "tags": ["Non-Veg", "Tandoori & Kebab"], "img": "img/chicken_tandoori.jpeg"},
-  {"id": 37, "cat": "Tandoori & Kebab", "name": "Chicken Tikka | चिकन टिक्का", "price": "Rs. 280", "desc": "Boneless chicken marinated and grilled in clay oven.", "tags": ["Non-Veg", "Tandoori & Kebab"], "img": "img/chicken_tikka.jpeg"},
-  {"id": 38, "cat": "Tandoori & Kebab", "name": "Chicken Banjara Kebab | चिकन बंजारा कबाब", "price": "Rs. 300", "desc": "Juicy chicken kebab spiced with Indian spices and herbs.", "tags": ["Non-Veg", "Tandoori & Kebab"], "img": "img/chicken_banjara_kebab.jpeg"},
-  {"id": 39, "cat": "Tandoori & Kebab", "name": "Chicken Pahadi Kebab | चिकन पहाडी कबाब", "price": "Rs. 300", "desc": "Grilled chicken kebab flavored with mint and coriander marinade.", "tags": ["Non-Veg", "Tandoori & Kebab"], "img": "img/chicken_pahadi_kebab.jpeg"},
-  {"id": 40, "cat": "Tandoori & Kebab", "name": "Chicken Malai Kebab | चिकन मलाई कबाब", "price": "Rs. 320", "desc": "Melt-in-mouth creamy and rich chicken kebab.", "tags": ["Non-Veg", "Tandoori & Kebab"], "img": "img/chicken_malai_kebab.jpeg"},
-  {"id": 41, "cat": "Tandoori & Kebab", "name": "Chicken Tangdi Kebab | चिकन टांगडी कबाब", "price": "Rs. 300", "desc": "Roasted chicken drumsticks infused with spices.", "tags": ["Non-Veg", "Tandoori & Kebab"], "img": "img/chicken_tangdi_kebab.jpeg"},
-  {"id": 42, "cat": "Tandoori & Kebab", "name": "Chicken Hara Bhara Kebab | चिकन हरा भरा कबाब", "price": "Rs. 300", "desc": "Green herb marinated delicious tandoori chicken kebab.", "tags": ["Non-Veg", "Tandoori & Kebab"], "img": "img/chicken_hara_bhara_kebab.jpeg"},
+  {"id": 29, "cat": "Fish Special", "name": "Bangda Tawa Fry | बांगडा तवा फ्राय", "price": "As Per Size", "desc": "Whole mackerel fish pan fried on tawa with spices.", "tags": ["Non-Veg", "Fish Special"], "img": "img/bangda_tawa_fry.jpeg"},
+  {"id": 30, "cat": "Fish Special", "name": "Bombil Tawa Fry | बोंबील तवा फ्राय", "price": "As Per Size", "desc": "Crispy fried fresh Bombay duck fish.", "tags": ["Non-Veg", "Fish Special"], "img": "img/bombil_tawa_fry.jpeg"},
+  {"id": 31, "cat": "Fish Special", "name": "Paplet Fry | पापलेट फ्राय", "price": "As Per Size", "desc": "Pomfret fish marinated and crisply fried.", "tags": ["Non-Veg", "Fish Special"], "img": "img/paplet_fry.jpeg"},
+  {"id": 32, "cat": "Fish Special", "name": "Surmai Fry | सुरमई फ्राय", "price": "As Per Size", "desc": "King fish steaks pan-fried in coastal spices.", "tags": ["Non-Veg", "Fish Special"], "img": "img/surmai_fry.jpeg"},
+  {"id": 33, "cat": "Fish Special", "name": "Kolambi Fry | कोळंबी फ्राय", "price": "As Per Size", "desc": "Crispy fried marinated fresh prawns.", "tags": ["Non-Veg", "Fish Special"], "img": "img/kolambi_fry.jpeg"},
+  {"id": 34, "cat": "Fish Special", "name": "Kolambi Curry Masala | कोळंबी करी मसाला", "price": "As Per Size", "desc": "Prawns cooked in authentic coastal coconut curry.", "tags": ["Non-Veg", "Fish Special"], "img": "img/kolambi_curry_masala.jpeg"},
+  {"id": 35, "cat": "Fish Special", "name": "Surmai Curry Masala | सुरमई करी मसाला", "price": "As Per Size", "desc": "Surmai fish steaks cooked in spicy curry gravy.", "tags": ["Non-Veg", "Fish Special"], "img": "img/surmai_curry_masala.jpeg"},
+  {"id": 36, "cat": "Fish Special", "name": "Paplet Curry Masala | पापलेट करी मसाला", "price": "As Per Size", "desc": "Pomfret fish cooked in rich Malvani style gravy.", "tags": ["Non-Veg", "Fish Special"], "img": "img/paplet_curry_masala.jpeg"},
+  {"id": 37, "cat": "Fish Special", "name": "Bangda Curry Masala | बांगडा करी मसाला", "price": "As Per Size", "desc": "Bangda fish simmered in tangy kokum curry.", "tags": ["Non-Veg", "Fish Special"], "img": "img/bangda_curry_masala.jpeg"},
+  {"id": 38, "cat": "Fish Special", "name": "Nadiche Mase (River Fish) | नदीचे मासे", "price": "As Per Size", "desc": "Fresh seasonal sweet water river fish preparation.", "tags": ["Non-Veg", "Fish Special"], "img": "img/nadiche_mase.jpeg"},
 
-  {"id": 43, "cat": "Biryani & Combos", "name": "Chicken Dum Biryani | चिकन दम बिर्याणी", "price": "Rs. 170", "desc": "Flavorful basmati rice layered with juicy chicken on dum.", "tags": ["Non-Veg", "Biryani & Combos"], "img": "img/chicken_dum_biryani.jpeg"},
-  {"id": 44, "cat": "Biryani & Combos", "name": "Swad Special Combo | स्वाद स्पेशल कॉम्बो", "price": "Rs. 380", "desc": "Special house combination platter.", "tags": ["Non-Veg", "Biryani & Combos"], "img": "img/swad_special_combo.jpeg"},
-  {"id": 45, "cat": "Biryani & Combos", "name": "Chicken Rice Combo (Rice + Lollipop + Chilli) | चिकन राईस कॉम्बो", "price": "Rs. 380", "desc": "Combo meal with Chicken Fried Rice, Chicken Lollipop, and Chilli Chicken.", "tags": ["Non-Veg", "Biryani & Combos"], "img": "img/chicken_rice_combo.jpeg"},
+  {"id": 39, "cat": "Sukhi Machhi Special", "name": "Javla Sukat Chutney | जवळा सुकट चटणी", "price": "Rs. 150", "desc": "Dry small baby shrimp roasted with onion and chillies.", "tags": ["Non-Veg", "Sukhi Machhi Special"], "img": "img/javla_sukat_chutney.jpeg"},
+  {"id": 40, "cat": "Sukhi Machhi Special", "name": "Mothi Sukat Chutney | मोठी सुकट चटणी", "price": "Rs. 150", "desc": "Traditional dry prawn roast cooked with village spices.", "tags": ["Non-Veg", "Sukhi Machhi Special"], "img": "img/mothi_sukat_chutney.jpeg"},
+  {"id": 41, "cat": "Sukhi Machhi Special", "name": "Bombil Suka Chutney | बोंबील सुका चटणी", "price": "Rs. 250", "desc": "Spiced dried Bombay duck chutney cooked with herbs.", "tags": ["Non-Veg", "Sukhi Machhi Special"], "img": "img/bombil_suka_chutney.jpeg"},
 
-  
-  {"id": 46, "cat": "Veg Starter", "name": "Paneer Chilli | पनीर चिल्ली", "price": "Rs. 260", "desc": "Fresh cottage cheese cubes tossed in spicy chilli soya sauce.", "tags": ["Veg", "Veg Starter"], "img": "img/paneer_chilli.jpeg"},
-  {"id": 47, "cat": "Veg Starter", "name": "Veg Manchurian (Half) | व्हेज मंचुरियन (हाफ)", "price": "Rs. 180", "desc": "Crispy vegetable balls tossed in Manchurian sauce (Half).", "tags": ["Veg", "Veg Starter"], "img": "img/veg_manchurian.jpeg"}, 
-  {"id": 48, "cat": "Veg Starter", "name": "Veg Manchurian (Full) | व्हेज मंचुरियन (फुल)", "price": "Rs. 260", "desc": "Crispy vegetable balls tossed in Manchurian sauce (Full).", "tags": ["Veg", "Veg Starter"], "img": "img/veg_manchurian.jpeg"},
-  {"id": 49, "cat": "Veg Starter", "name": "Soyabean Chilli (Half) | सोयाबीन चिल्ली (हाफ)", "price": "Rs. 120", "desc": "Nutritious soyabean chunks tossed in chilli soya sauce (Half).", "tags": ["Veg", "Veg Starter"], "img": "img/soyabean_chilli.jpeg"},
-  {"id": 50, "cat": "Veg Starter", "name": "Soyabean Chilli (Full) | सोयाबीन चिल्ली (फुल)", "price": "Rs. 200", "desc": "Nutritious soyabean chunks tossed in chilli soya sauce (Full).", "tags": ["Veg", "Veg Starter"], "img": "img/soyabean_chilli.jpeg"},
-  {"id": 51, "cat": "Veg Starter", "name": "Chana Koliwada | चना कोळीवाडा", "price": "Rs. 150", "desc": "Crispy fried spiced chickpeas prepared in Koliwada style.", "tags": ["Veg", "Veg Starter"], "img": "img/chana_koliwada.jpeg"},
-  {"id": 52, "cat": "Veg Starter", "name": "Chana Garlic | चना गार्लिक", "price": "Rs. 150", "desc": "Crispy fried chickpeas tossed with aromatic sautéed garlic.", "tags": ["Veg", "Veg Starter"], "img": "img/chana_garlic.jpeg"},
+  {"id": 42, "cat": "Egg Special", "name": "Egg Bhurji | अंडा भुर्जी", "price": "Rs. 120", "desc": "Scrambled eggs cooked with onions, chillies, and spices.", "tags": ["Non-Veg", "Egg Special"], "img": "img/egg_bhurji.jpeg"},
+  {"id": 43, "cat": "Egg Special", "name": "Double Omelette | डबल ऑम्लेट", "price": "Rs. 50", "desc": "Classic pan fried double egg omelette.", "tags": ["Non-Veg", "Egg Special"], "img": "img/double_omelette.jpeg"},
+  {"id": 44, "cat": "Egg Special", "name": "Egg Curry | अंडा करी", "price": "Rs. 150", "desc": "Boiled eggs cooked in flavorful onion-tomato gravy.", "tags": ["Non-Veg", "Egg Special"], "img": "img/egg_curry.jpeg"},
+  {"id": 45, "cat": "Egg Special", "name": "Gavthi Egg Curry | गावठी अंडा करी", "price": "Rs. 180", "desc": "Desi country eggs simmered in authentic rassa.", "tags": ["Non-Veg", "Egg Special"], "img": "img/gavthi_egg_curry.jpeg"},
+  {"id": 46, "cat": "Egg Special", "name": "Gavthi Boiled Egg | गावठी बॉईल अंडा", "price": "Rs. 100", "desc": "Nutritious boiled desi country eggs.", "tags": ["Non-Veg", "Egg Special"], "img": "img/gavthi_boiled_egg.jpeg"},
 
-  {"id": 53, "cat": "Veg Rice", "name": "Veg Fried Rice (Half) | व्हेज फ्राय राईस (हाफ)", "price": "Rs. 90", "desc": "Classic fried rice tossed with fresh chopped vegetables (Half).", "tags": ["Veg", "Veg Rice"], "img": "img/veg_fried_rice.jpeg"},
-  {"id": 54, "cat": "Veg Rice", "name": "Veg Fried Rice (Full) | व्हेज फ्राय राईस (फुल)", "price": "Rs. 160", "desc": "Classic fried rice tossed with fresh chopped vegetables (Full).", "tags": ["Veg", "Veg Rice"], "img": "img/veg_fried_rice.jpeg"},
-  {"id": 55, "cat": "Veg Rice", "name": "Veg Manchurian Rice (Half) | व्हेज मंचुरियन राईस (हाफ)", "price": "Rs. 100", "desc": "Fried rice tossed with delicious veg Manchurian balls (Half).", "tags": ["Veg", "Veg Rice"], "img": "img/veg_manchurian_rice.jpeg"},
-  {"id": 56, "cat": "Veg Rice", "name": "Veg Manchurian Rice (Full) | व्हेज मंचुरियन राईस (फुल)", "price": "Rs. 180", "desc": "Fried rice tossed with delicious veg Manchurian balls (Full).", "tags": ["Veg", "Veg Rice"], "img": "img/veg_manchurian_rice.jpeg"},
-  {"id": 57, "cat": "Veg Rice", "name": "Paneer Rice (Half) | पनीर राईस (हाफ)", "price": "Rs. 120", "desc": "Fried rice stir-fried with juicy paneer cubes (Half).", "tags": ["Veg", "Veg Rice"], "img": "img/veg_paneer_rice.jpeg"},
-  {"id": 58, "cat": "Veg Rice", "name": "Paneer Rice (Full) | पनीर राईस (फुल)", "price": "Rs. 200", "desc": "Fried rice stir-fried with juicy paneer cubes (Full).", "tags": ["Veg", "Veg Rice"], "img": "img/veg_paneer_rice.jpeg"},
-  {"id": 59, "cat": "Veg Rice", "name": "Soyabean Rice (Half) | सोयाबीन राईस (हाफ)", "price": "Rs. 90", "desc": "Healthy fried rice tossed with seasoned soyabean chunks (Half).", "tags": ["Veg", "Veg Rice"], "img": "img/soyabean_rice.jpeg"},
-  {"id": 60, "cat": "Veg Rice", "name": "Soyabean Rice (Full) | सोयाबीन राईस (फुल)", "price": "Rs. 160", "desc": "Healthy fried rice tossed with seasoned soyabean chunks (Full).", "tags": ["Veg", "Veg Rice"], "img": "img/soyabean_rice.jpeg"},
-  {"id": 61, "cat": "Veg Rice", "name": "Soyabean Schezwan Rice (Half) | सोयाबीन शेजवान राईस (हाफ)", "price": "Rs. 100", "desc": "Spicy Schezwan fried rice with soyabean chunks (Half).", "tags": ["Veg", "Veg Rice"], "img": "img/soyabean_schezwan_rice.jpeg"},
-  {"id": 62, "cat": "Veg Rice", "name": "Soyabean Schezwan Rice (Full) | सोयाबीन शेजवान राईस (फुल)", "price": "Rs. 180", "desc": "Spicy Schezwan fried rice with soyabean chunks (Full).", "tags": ["Veg", "Veg Rice"], "img": "img/soyabean_schezwan_rice.jpeg"},
+  {"id": 47, "cat": "Veg Special", "name": "Veg Thali | व्हेज थाळी", "price": "Rs. 150", "desc": "Complete homestyle vegetarian meal with bhaji, roti, rice & dal.", "tags": ["Veg", "Veg Special"], "img": "img/veg_thali.jpeg"},
+  {"id": 48, "cat": "Veg Special", "name": "Paneer Chilli | पनीर चिल्ली", "price": "Rs. 300", "desc": "Fresh cottage cheese tossed with capsicum and spicy sauce.", "tags": ["Veg", "Veg Special"], "img": "img/paneer_chilli.jpeg"},
+  {"id": 49, "cat": "Veg Special", "name": "Veg Pulao | व्हेज पुलाव", "price": "Rs. 150", "desc": "Fragrant basmati rice cooked with mixed vegetables.", "tags": ["Veg", "Veg Special"], "img": "img/veg_pulao.jpeg"},
+  {"id": 50, "cat": "Veg Special", "name": "Veg Biryani | व्हेज बिर्याणी", "price": "Rs. 160", "desc": "Spiced basmati rice layered with vegetables and aroma.", "tags": ["Veg", "Veg Special"], "img": "img/veg_biryani.jpeg"},
+  {"id": 51, "cat": "Veg Special", "name": "Paneer Mutter | पनीर मटार", "price": "Rs. 170", "desc": "Cottage cheese and green peas in spiced curry gravy.", "tags": ["Veg", "Veg Special"], "img": "img/paneer_mutter.jpeg"},
+  {"id": 52, "cat": "Veg Special", "name": "Aloo Mutter | आलु मटार", "price": "Rs. 150", "desc": "Potatoes and tender green peas cooked in masala.", "tags": ["Veg", "Veg Special"], "img": "img/aloo_mutter.jpeg"},
+  {"id": 53, "cat": "Veg Special", "name": "Bhendi Masala | भेंडी मसाला", "price": "Rs. 100", "desc": "Pan roasted lady finger cooked with spices.", "tags": ["Veg", "Veg Special"], "img": "img/bhendi_masala.jpeg"},
+  {"id": 54, "cat": "Veg Special", "name": "Bharli Vangi | भरली वांगी", "price": "Rs. 100", "desc": "Traditional Maharashtrian peanut and coconut stuffed eggplants.", "tags": ["Veg", "Veg Special"], "img": "img/bharli_vangi.jpeg"},
+  {"id": 55, "cat": "Veg Special", "name": "Shev Bhaji | शेव भाजी", "price": "Rs. 80", "desc": "Spicy Maharashtrian curry topped with crunchy sev.", "tags": ["Veg", "Veg Special"], "img": "img/shev_bhaji.jpeg"},
+  {"id": 56, "cat": "Veg Special", "name": "Mix Bhaji (Kanda + Batata + Mirchi) | कांदा + बटाटा + मिरची भजी", "price": "Rs. 80", "desc": "Assorted crispy onion, potato, and chilli fritters.", "tags": ["Veg", "Veg Special"], "img": "img/mix_bhaji.jpeg"},
 
-  {"id": 63, "cat": "Veg Noodles", "name": "Paneer Noodles (Half) | पनीर नूडल्स (हाफ)", "price": "Rs. 120", "desc": "Stir-fried noodles loaded with soft paneer cubes (Half).", "tags": ["Veg", "Veg Noodles"], "img": "img/paneer_noodles.jpeg"},
-  {"id": 64, "cat": "Veg Noodles", "name": "Paneer Noodles (Full) | पनीर नूडल्स (फुल)", "price": "Rs. 200", "desc": "Stir-fried noodles loaded with soft paneer cubes (Full).", "tags": ["Veg", "Veg Noodles"], "img": "img/paneer_noodles.jpeg"},
-  {"id": 65, "cat": "Veg Noodles", "name": "Paneer Schezwan Noodles (Half) | पनीर शेजवान नूडल्स (हाफ)", "price": "Rs. 120", "desc": "Spicy Schezwan tossed noodles with paneer (Half).", "tags": ["Veg", "Veg Noodles"], "img": "img/paneer_schezwan_noodles.jpeg"},
-  {"id": 66, "cat": "Veg Noodles", "name": "Paneer Schezwan Noodles (Full) | पनीर शेजवान नूडल्स (फुल)", "price": "Rs. 200", "desc": "Spicy Schezwan tossed noodles with paneer (Full).", "tags": ["Veg", "Veg Noodles"], "img": "img/paneer_schezwan_noodles.jpeg"},
-  {"id": 67, "cat": "Veg Noodles", "name": "Schezwan Noodles (Half) | शेजवान नूडल्स (हाफ)", "price": "Rs. 120", "desc": "Spicy wok-tossed Schezwan vegetable noodles (Half).", "tags": ["Veg", "Veg Noodles"], "img": "img/veg_schezwan_noodles.jpeg"},
-  {"id": 68, "cat": "Veg Noodles", "name": "Schezwan Noodles (Full) | शेजवान नूडल्स (फुल)", "price": "Rs. 200", "desc": "Spicy wok-tossed Schezwan vegetable noodles (Full).", "tags": ["Veg", "Veg Noodles"], "img": "img/veg_schezwan_noodles.jpeg"},
-  {"id": 69, "cat": "Veg Noodles", "name": "Soyabean Noodles (Half) | सोयाबीन नूडल्स (हाफ)", "price": "Rs. 100", "desc": "Noodles stir-fried with seasoned soyabean chunks (Half).", "tags": ["Veg", "Veg Noodles"], "img": "img/soyabean_noodles.jpeg"},
-  {"id": 70, "cat": "Veg Noodles", "name": "Soyabean Noodles (Full) | सोयाबीन नूडल्स (फुल)", "price": "Rs. 180", "desc": "Noodles stir-fried with seasoned soyabean chunks (Full).", "tags": ["Veg", "Veg Noodles"], "img": "img/soyabean_noodles.jpeg"},  
-
-      
-
-          
-        ];
+  {"id": 57, "cat": "Roti & Rice", "name": "Plain Rice (Half) | राईस (हाफ)", "price": "Rs. 60", "desc": "Steamed white basmati rice (Half).", "tags": ["Veg", "Roti & Rice"], "img": "img/plain_rice.jpeg"},
+  {"id": 58, "cat": "Roti & Rice", "name": "Plain Rice (Full) | राईस (फुल)", "price": "Rs. 100", "desc": "Steamed white basmati rice (Full).", "tags": ["Veg", "Roti & Rice"], "img": "img/plain_rice.jpeg"},
+  {"id": 59, "cat": "Roti & Rice", "name": "Jeera Rice (Half) | जिरा राईस (हाफ)", "price": "Rs. 80", "desc": "Cumin tempered aromatic rice (Half).", "tags": ["Veg", "Roti & Rice"], "img": "img/jeera_rice.jpeg"},
+  {"id": 60, "cat": "Roti & Rice", "name": "Jeera Rice (Full) | जिरा राईस (फुल)", "price": "Rs. 120", "desc": "Cumin tempered aromatic rice (Full).", "tags": ["Veg", "Roti & Rice"], "img": "img/jeera_rice.jpeg"},
+  {"id": 61, "cat": "Roti & Rice", "name": "Bhakri | भाकरी", "price": "Rs. 20", "desc": "Fresh hot jowar/bajra flatbread roasted on chulha.", "tags": ["Veg", "Roti & Rice"], "img": "img/bhakri.jpeg"},
+  {"id": 62, "cat": "Roti & Rice", "name": "Ghavne | घावणे", "price": "Rs. 15", "desc": "Traditional soft Konkani style rice crepes.", "tags": ["Veg", "Roti & Rice"], "img": "img/ghavne.jpeg"},
+  {"id": 63, "cat": "Roti & Rice", "name": "Special Kombdi Vade | स्पेशल कोंबडी वडे", "price": "Rs. 10", "desc": "Crispy puffed multigrain puri paired with chicken.", "tags": ["Veg", "Roti & Rice"], "img": "img/kombdi_vade.jpeg"}
+];
 
         // Cart functionality    
         let cart = [];
